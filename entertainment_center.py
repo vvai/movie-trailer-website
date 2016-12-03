@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+# create nine favorite movie objects
 whiplash = media.Movie("Whiplash", "movie about obsession",
                        "https://upload.wikimedia.org/wikipedia/ru/0/01/Whiplash_poster.jpg",  # NOQA
                        "https://www.youtube.com/watch?v=7d_jQycdQGo")
@@ -38,8 +39,10 @@ mulholland_drive = media.Movie("Mulholland Drive",
                                "https://upload.wikimedia.org/wikipedia/en/0/0f/Mulholland.png",  # NOQA
                                "https://www.youtube.com/watch?v=VHPKe8D01Kk")
 
+# create list with favorite movies
 movies = [enter_the_void, whiplash, neon_demon,
           swiss_army_man, two_days_one_night, melancholia,
           yes_and_yes, knight_of_cups, mulholland_drive]
 
+# open website in browser
 fresh_tomatoes.open_movies_page(movies)
